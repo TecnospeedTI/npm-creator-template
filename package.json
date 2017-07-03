@@ -1,0 +1,25 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "description": "",
+  "main": "./bin",
+  "scripts": {
+    "test": "standard --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TecnospeedTI/npm-creator.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TecnospeedTI/npm-creator/issues"
+  },
+  "homepage": "https://github.com/TecnospeedTI/npm-creator#readme",
+  "devDependencies": {
+    "standard": "^10.0.2"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
