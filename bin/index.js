@@ -1,5 +1,4 @@
 var minimist = require('minimist')
-var lib = require('../lib')
 
 var args = minimist(process.argv.slice(2))
 
@@ -10,10 +9,21 @@ if (args.v || args.version) {
 
 if (!args._.length) {
   console.log()
-  console.log('    -v, --version\t' + 'Show current version')
+  console.log('  Usage: {NAME} [command] [options]')
+  console.log()
+  console.log('  Commands:')
+  console.log()
+  console.log('    hello\t\tPrint "Hello world!"')
+  console.log()
+  console.log('  Options:')
+  console.log()
+  console.log('    -v, --version\tShow current version')
   process.exit()
 }
 
-if(args._.indexOf('show') !== -1){
-  lib.show()
+var lib = require('../lib')
+
+if (args._.indexOf('hello') !== -1) {
+  console.log(lib.hello())
+  process.exit()
 }
